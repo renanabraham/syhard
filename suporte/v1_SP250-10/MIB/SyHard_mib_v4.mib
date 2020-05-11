@@ -1,0 +1,88 @@
+SYHARD-MIB DEFINITIONS ::= BEGIN
+IMPORTS
+MODULE-IDENTITY, OBJECT-TYPE, Integer32, enterprises FROM SNMPv2-SMI
+MODULE-COMPLIANCE, OBJECT-GROUP FROM SNMPv2-CONF;
+
+syhard MODULE-IDENTITY
+LAST-UPDATED "201901311146Z"
+ORGANIZATION "SyHard"
+CONTACT-INFO
+" Author: leo@syhard.com.br
+Syhard - Smart System Hardware
+http://www.syhard.com.br
+Santiago, RS, Brazil"
+
+DESCRIPTION "MIB for remote monitoring"
+::= { enterprises 52199 }
+
+safepower OBJECT IDENTIFIER ::= { syhard 1 }
+reserved1 OBJECT IDENTIFIER::= { syhard 2 }
+reserved2 OBJECT IDENTIFIER ::= { syhard 3 }
+reserved3 OBJECT IDENTIFIER::= { syhard 4 }
+
+temperature OBJECT-TYPE
+SYNTAX Integer32 (-25555..25555)
+MAX-ACCESS read-only
+STATUS current
+DESCRIPTION "internal air temperature, must be divided by 100"
+::= { safepower 1 }
+
+humidity OBJECT-TYPE
+SYNTAX Integer32 (0..25555)
+MAX-ACCESS read-only
+STATUS current
+DESCRIPTION "internal air humidity"
+::= { safepower 2 }
+
+pressure OBJECT-TYPE
+SYNTAX Integer32 (0..25555)
+MAX-ACCESS read-only
+STATUS current
+DESCRIPTION "internal air pressure"
+::= { safepower 3 }
+
+rssi OBJECT-TYPE
+SYNTAX Integer32 (0..99)
+MAX-ACCESS read-only
+STATUS current
+DESCRIPTION "Wifi RSSI"
+::= { safepower 4 }
+
+circuitBreaker OBJECT-TYPE
+SYNTAX Integer32 (0..1)
+MAX-ACCESS read-only
+STATUS current
+DESCRIPTION "Circuit breaker status, 0 = off, 1 = on"
+::= { safepower 5 }
+
+generator OBJECT-TYPE
+SYNTAX Integer32 (0..1)
+MAX-ACCESS read-only
+STATUS current
+DESCRIPTION "Auxiliar power generator, 0 = off, 1 = on"
+::= { safepower 6 }
+
+internalBatteryCharging OBJECT-TYPE
+SYNTAX Integer32 (0..1)
+MAX-ACCESS read-only
+STATUS current
+DESCRIPTION "Internal battery charge state, 0 = not charging, 1 = charging"
+::= { safepower 7 }
+
+manualMode OBJECT-TYPE
+SYNTAX Integer32 (0..1)
+MAX-ACCESS read-only
+STATUS current
+DESCRIPTION "Circuit breaker automatic Manual mode status, 0 = auto mode, 1 = manual mode"
+::= { safepower 8 }
+
+gridRmsPower OBJECT-TYPE
+SYNTAX Integer32 (0..255)
+MAX-ACCESS read-only
+STATUS current
+DESCRIPTION "Grid RMS Power"
+::= { safepower 9 }
+
+
+--
+END

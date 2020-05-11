@@ -1,0 +1,4 @@
+        .footer{ position: fixed; left: 0; bottom: 0; width: 100%; background-color: rgb(233, 233, 233); color: black; text-align: center; font-family: 'Times New Roman', Times, serif; }
+        .Ecourier{ font-family: 'Courier New'; }
+        input{ border-radius: 2px !important; }
+        .Elogin_wait{ width:100%; background-color: #1692B4; color: white !important; }

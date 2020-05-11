@@ -1,0 +1,770 @@
+#raio{
+  min-width: 100%;
+  filter: blur(1px);
+}
+
+a:link 
+{ 
+text-decoration:none; 
+} 
+
+/*Dispositivos Muito Pequenos (Telefones em retrato, até 576px)*/
+/*Dispositivos Pequenos (Telefones em Paisagem, 576px e superior)*/
+/*Dispositivos Medios (Tablets, 768px e superior)*/
+/*Dispositivos Grandes (Desktops, 992px e superior)*/
+/*Dispositivos Muito Grandes (Desktops Grandes, 1200px e superior)*/
+
+@media (max-width: 499.98px) {
+  #logo{
+    max-height: 40px;
+    filter: brightness(0%) invert(100%);
+  }
+
+  #div_logo{
+    position: absolute;
+    top: 8%;
+    left: 30%;
+    z-index:100;
+  }
+
+  #legenda{
+    color: white;
+    font-size: 20px;
+  }
+
+  #div_legenda{
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    z-index:100; 
+  }
+
+  #div_whats{
+    position: absolute;
+    top: 20%;
+    right: 25%;
+    z-index:100;
+  }
+
+  #whatsapp{
+    color: white;
+    font-size: 50px;
+    text-shadow: 2px 2px 4px #000000;
+    display: none;
+  }
+
+  #numWhats{
+    font-size: 140%;
+    text-shadow: 2px 2px 4px #000000;
+  }
+
+  #down{
+    position: relative;
+    top: -10px;
+    left: 220px;
+    font-size: 55px;
+    text-shadow: 2px 2px 4px #000000;
+    display: none;
+  }
+  .icones{
+    width: 100px;
+    height: 100px;
+    background-color: #183A68;
+    border-radius: 100px;
+  }
+  .iconesBeneficios{
+    color: white;
+    font-size: 55px;
+    margin-top:22%;
+  }
+  .empresa{
+    width: 150px;
+    height: 150px;
+    background-color: #183A68;
+    border-radius: 100px;
+  }
+
+  .zoom{
+      transition: transform .2s;
+  }
+  .zoom:hover{
+      transform: scale(1.2);
+  }
+
+  .fadeIn{
+    animation: fadein 3s; /* Padrão */
+    -webkit-animation: fadein 3s; /* Webkit */
+    -moz-animation: fadein 3s; /* Firefox */
+    -ms-animation: fadein 3s; /* IE */
+  }
+  @keyframes fadein {
+    from { opacity: 0.0; }
+    to { opacity: 1; } /* Padrão */
+  }
+  @-moz-keyframes fadein {
+    from { opacity: 0.0; }
+    to { opacity: 1; } /* Firefox */
+  }
+  @-webkit-keyframes fadein {
+    from { opacity: 0.0; }
+    to{ opacity: 1; } /* Webkit */
+  }
+  @-ms-keyframes fadein {
+    from { opacity: 0.0; }
+    to { opacity: 1; } /* IE */
+  }​
+}
+
+@media (min-width: 500px) and (max-width: 575.98px) {
+  #logo{
+    max-height: 70px;
+    filter: brightness(0%) invert(100%);
+  }
+
+  #div_logo{
+    position: absolute;
+    top: 8%;
+    left: 30%;
+    z-index:100;
+  }
+
+  #legenda{
+    color: white;
+    font-size: 35px;
+  }
+
+  #div_legenda{
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    z-index:100; 
+  }
+
+  #div_whats{
+    position: absolute;
+    top: 23%;
+    right: 28%;
+    z-index:100;
+  }
+
+  #whatsapp{
+    color: white;
+    font-size: 50px;
+    text-shadow: 2px 2px 4px #000000;
+    display: none;
+  }
+
+  #numWhats{
+    font-size: 180%;
+    text-shadow: 2px 2px 4px #000000;
+  }
+
+  #down{
+    position: relative;
+    top: -10px;
+    left: 220px;
+    font-size: 55px;
+    text-shadow: 2px 2px 4px #000000;
+    display: none;
+  }
+  .icones{
+    width: 100px;
+    height: 100px;
+    background-color: #183A68;
+    border-radius: 100px;
+  }
+  .iconesBeneficios{
+    color: white;
+    font-size: 55px;
+    margin-top:22%;
+  }
+  .empresa{
+    width: 150px;
+    height: 150px;
+    background-color: #183A68;
+    border-radius: 100px;
+  }
+
+  .zoom{
+      transition: transform .2s;
+  }
+  .zoom:hover{
+      transform: scale(1.2);
+  }
+
+  .fadeIn{
+    animation: fadein 3s; /* Padrão */
+    -webkit-animation: fadein 3s; /* Webkit */
+    -moz-animation: fadein 3s; /* Firefox */
+    -ms-animation: fadein 3s; /* IE */
+  }
+  @keyframes fadein {
+    from { opacity: 0.0; }
+    to { opacity: 1; } /* Padrão */
+  }
+  @-moz-keyframes fadein {
+    from { opacity: 0.0; }
+    to { opacity: 1; } /* Firefox */
+  }
+  @-webkit-keyframes fadein {
+    from { opacity: 0.0; }
+    to{ opacity: 1; } /* Webkit */
+  }
+  @-ms-keyframes fadein {
+    from { opacity: 0.0; }
+    to { opacity: 1; } /* IE */
+  }​
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #logo{
+    max-height: 70px;
+    filter: brightness(0%) invert(100%);
+  }
+
+  #div_logo{
+    position: absolute;
+    top: 15%;
+    left: 30%;
+    z-index:100;
+  }
+
+  #legenda{
+    color: white;
+    font-size: 35px;
+  }
+
+  #div_legenda{
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    z-index:100; 
+  }
+
+  #div_whats{
+    position: absolute;
+    top: 30%;
+    right: 35%;
+    z-index:100;
+  }
+
+  #whatsapp{
+    color: white;
+    font-size: 50px;
+    text-shadow: 2px 2px 4px #000000;
+    display: none;
+  }
+
+  #numWhats{
+    font-size: 180%;
+    text-shadow: 2px 2px 4px #000000;
+  }
+
+  #down{
+    position: relative;
+    top: -10px;
+    left: 220px;
+    font-size: 55px;
+    text-shadow: 2px 2px 4px #000000;
+  }
+  .icones{
+    width: 100px;
+    height: 100px;
+    background-color: #183A68;
+    border-radius: 100px;
+  }
+  .iconesBeneficios{
+    color: white;
+    font-size: 55px;
+    margin-top:22%;
+  }
+  .empresa{
+    width: 150px;
+    height: 150px;
+    background-color: #183A68;
+    border-radius: 100px;
+  }
+
+  .zoom{
+      transition: transform .2s;
+  }
+  .zoom:hover{
+      transform: scale(1.2);
+  }
+
+  .fadeIn{
+    animation: fadein 3s; /* Padrão */
+    -webkit-animation: fadein 3s; /* Webkit */
+    -moz-animation: fadein 3s; /* Firefox */
+    -ms-animation: fadein 3s; /* IE */
+  }
+  @keyframes fadein {
+    from { opacity: 0.0; }
+    to { opacity: 1; } /* Padrão */
+  }
+  @-moz-keyframes fadein {
+    from { opacity: 0.0; }
+    to { opacity: 1; } /* Firefox */
+  }
+  @-webkit-keyframes fadein {
+    from { opacity: 0.0; }
+    to{ opacity: 1; } /* Webkit */
+  }
+  @-ms-keyframes fadein {
+    from { opacity: 0.0; }
+    to { opacity: 1; } /* IE */
+  }​
+}
+
+/*768px a 991.98px*/
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #logo{
+    max-height: 80px;
+    filter: brightness(0%) invert(100%);
+  }
+
+  #div_logo{
+    position: absolute;
+    top: 15%;
+    left: 37%;
+    z-index:100;
+  }
+
+  #legenda{
+    color: white;
+    font-size: 45px;
+  }
+
+  #div_legenda{
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    z-index:100; 
+  }
+
+  #div_whats{
+    position: absolute;
+    top: 40%;
+    right: 35%;
+    z-index:100;
+  }
+
+  #whatsapp{
+    color: white;
+    font-size: 50px;
+    text-shadow: 2px 2px 4px #000000;
+    display: none;
+  }
+
+  #numWhats{
+    font-size: 180%;
+    text-shadow: 2px 2px 4px #000000;
+  }
+
+  #down{
+    position: relative;
+    top: -10px;
+    left: 220px;
+    font-size: 55px;
+    text-shadow: 2px 2px 4px #000000;
+  }
+  .icones{
+    width: 100px;
+    height: 100px;
+    background-color: #183A68;
+    border-radius: 100px;
+  }
+  .iconesBeneficios{
+    color: white;
+    font-size: 55px;
+    margin-top:22%;
+  }
+  .empresa{
+    width: 150px;
+    height: 150px;
+    background-color: #183A68;
+    border-radius: 100px;
+  }
+
+  .zoom{
+      transition: transform .2s;
+  }
+  .zoom:hover{
+      transform: scale(1.2);
+  }
+
+  .fadeIn{
+    animation: fadein 3s; /* Padrão */
+    -webkit-animation: fadein 3s; /* Webkit */
+    -moz-animation: fadein 3s; /* Firefox */
+    -ms-animation: fadein 3s; /* IE */
+  }
+  @keyframes fadein {
+    from { opacity: 0.0; }
+    to { opacity: 1; } /* Padrão */
+  }
+  @-moz-keyframes fadein {
+    from { opacity: 0.0; }
+    to { opacity: 1; } /* Firefox */
+  }
+  @-webkit-keyframes fadein {
+    from { opacity: 0.0; }
+    to{ opacity: 1; } /* Webkit */
+  }
+  @-ms-keyframes fadein {
+    from { opacity: 0.0; }
+    to { opacity: 1; } /* IE */
+  }​
+}
+
+/*992px a 1099.98px*/
+
+@media (min-width: 992px) and (max-width: 1099.98px) {
+  #logo{
+    max-height: 80px;
+    filter: brightness(0%) invert(100%);
+  }
+
+  #div_logo{
+    position: absolute;
+    top: 22%;
+    left: 10%;
+    z-index:100;
+  }
+
+  #legenda{
+    color: white;
+    font-size: 55px;
+  }
+
+  #div_legenda{
+    position: absolute;
+    top: 60%;
+    left: 25%;
+    z-index:100; 
+  }
+
+  #div_whats{
+    position: absolute;
+    top: 25%;
+    right: 5%;
+    z-index:100;
+  }
+
+  #whatsapp{
+    color: white;
+    font-size: 50px;
+    text-shadow: 2px 2px 4px #000000;
+  }
+
+  #numWhats{
+    font-size: 180%;
+    text-shadow: 2px 2px 4px #000000;
+  }
+
+  #down{
+    position: relative;
+    top: -10px;
+    left: 200px;
+    font-size: 55px;
+    text-shadow: 2px 2px 4px #000000;
+  }
+  .icones{
+    width: 100px;
+    height: 100px;
+    background-color: #183A68;
+    border-radius: 100px;
+  }
+  .iconesBeneficios{
+    color: white;
+    font-size: 55px;
+    margin-top:22%;
+  }
+  .empresa{
+    width: 150px;
+    height: 150px;
+    background-color: #183A68;
+    border-radius: 100px;
+  }
+    
+  .zoom{
+      transition: transform .2s;
+  }
+  .zoom:hover{
+      transform: scale(1.2);
+  }
+
+  .fadeIn{
+    animation: fadein 3s; /* Padrão */
+    -webkit-animation: fadein 3s; /* Webkit */
+    -moz-animation: fadein 3s; /* Firefox */
+    -ms-animation: fadein 3s; /* IE */
+  }
+  @keyframes fadein {
+    from { opacity: 0.0; }
+    to { opacity: 1; } /* Padrão */
+  }
+  @-moz-keyframes fadein {
+    from { opacity: 0.0; }
+    to { opacity: 1; } /* Firefox */
+  }
+  @-webkit-keyframes fadein {
+    from { opacity: 0.0; }
+    to{ opacity: 1; } /* Webkit */
+  }
+  @-ms-keyframes fadein {
+    from { opacity: 0.0; }
+    to { opacity: 1; } /* IE */
+  }​
+}
+
+/*1100px a 1319.98px*/
+
+@media (min-width: 1100px) and (max-width: 1319.98px) {
+  #logo{
+    max-height: 80px;
+    filter: brightness(0%) invert(100%);
+  }
+
+  #div_logo{
+    position: absolute;
+    top: 22%;
+    left: 10%;
+    z-index:100;
+  }
+
+  #legenda{
+    color: white;
+    font-size: 65px;
+  }
+
+  #div_legenda{
+    position: absolute;
+    top: 60%;
+    left: 25%;
+    z-index:100; 
+  }
+
+  #div_whats{
+    position: absolute;
+    top: 25%;
+    right: 5%;
+    z-index:100;
+  }
+
+  #whatsapp{
+    color: white;
+    font-size: 50px;
+    text-shadow: 2px 2px 4px #000000;
+  }
+
+  #numWhats{
+    font-size: 200%;
+    text-shadow: 2px 2px 4px #000000;
+  }
+
+
+  #down{
+    position: relative;
+    top: -10px;
+    left: 450px;
+    font-size: 55px;
+    text-shadow: 2px 2px 4px #000000;
+  }
+  .icones{
+    width: 100px;
+    height: 100px;
+    background-color: #183A68;
+    border-radius: 100px;
+  }
+  .iconesBeneficios{
+    color: white;
+    font-size: 55px;
+    margin-top:22%;
+  }
+  .empresa{
+    width: 150px;
+    height: 150px;
+    background-color: #183A68;
+    border-radius: 100px;
+  }
+    
+  .zoom{
+      transition: transform .2s;
+  }
+  .zoom:hover{
+      transform: scale(1.2);
+  }
+
+  .fadeIn{
+    animation: fadein 3s; /* Padrão */
+    -webkit-animation: fadein 3s; /* Webkit */
+    -moz-animation: fadein 3s; /* Firefox */
+    -ms-animation: fadein 3s; /* IE */
+  }
+  @keyframes fadein {
+    from { opacity: 0.0; }
+    to { opacity: 1; } /* Padrão */
+  }
+  @-moz-keyframes fadein {
+    from { opacity: 0.0; }
+    to { opacity: 1; } /* Firefox */
+  }
+  @-webkit-keyframes fadein {
+    from { opacity: 0.0; }
+    to{ opacity: 1; } /* Webkit */
+  }
+  @-ms-keyframes fadein {
+    from { opacity: 0.0; }
+    to { opacity: 1; } /* IE */
+  }​
+}
+
+@media (min-width: 1320px) {
+  #logo{
+    max-height: 80px;
+    filter: brightness(0%) invert(100%);
+  }
+
+  #div_logo{
+    position: absolute;
+    top: 22%;
+    left: 10%;
+    z-index:100;
+  }
+
+  #legenda{
+    color: white;
+    font-size: 65px;
+  }
+
+  #div_legenda{
+    position: absolute;
+    top: 60%;
+    left: 25%;
+    z-index:100; 
+  }
+
+  #div_whats{
+    position: absolute;
+    top: 25%;
+    right: 5%;
+    z-index:100;
+  }
+
+  #whatsapp{
+    color: white;
+    font-size: 50px;
+    text-shadow: 2px 2px 4px #000000;
+  }
+
+  #numWhats{
+    font-size: 200%;
+    text-shadow: 2px 2px 4px #000000;
+  }
+
+  #down{
+    position: relative;
+    top: -10px;
+    left: 450px;
+    font-size: 55px;
+    text-shadow: 2px 2px 4px #000000;
+  }
+  .icones{
+    width: 100px;
+    height: 100px;
+    background-color: #183A68;
+    border-radius: 100px;
+  }
+  .iconesBeneficios{
+    color: white;
+    font-size: 55px;
+    margin-top:22%;
+  }
+  .empresa{
+    width: 150px;
+    height: 150px;
+    background-color: #183A68;
+    border-radius: 100px;
+  }
+
+  .zoom{
+      transition: transform .2s;
+  }
+  .zoom:hover{
+      transform: scale(1.2);
+  }
+
+  .fadeIn{
+    animation: fadein 3s; /* Padrão */
+    -webkit-animation: fadein 3s; /* Webkit */
+    -moz-animation: fadein 3s; /* Firefox */
+    -ms-animation: fadein 3s; /* IE */
+  }
+  @keyframes fadein {
+    from { opacity: 0.0; }
+    to { opacity: 1; } /* Padrão */
+  }
+  @-moz-keyframes fadein {
+    from { opacity: 0.0; }
+    to { opacity: 1; } /* Firefox */
+  }
+  @-webkit-keyframes fadein {
+    from { opacity: 0.0; }
+    to{ opacity: 1; } /* Webkit */
+  }
+  @-ms-keyframes fadein {
+    from { opacity: 0.0; }
+    to { opacity: 1; } /* IE */
+  }​
+}
+
+.ecourier{ font-family: Arial, sans-serif; }
+.carousel-caption{ color: white; }
+
+input[type="password"],
+select.form-control {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #D7D8D9;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 0;
+}
+input[type="text"],
+select.form-control {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #D7D8D9;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 0;
+}
+textarea[type="text"],
+select.form-control {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #D7D8D9;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+
+input[type="password"]:focus,
+select.form-control:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+input[type="text"]:focus,
+select.form-control:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+textarea[type="text"]:focus,
+select.form-control:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
